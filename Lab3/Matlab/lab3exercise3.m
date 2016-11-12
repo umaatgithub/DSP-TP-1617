@@ -47,7 +47,7 @@ title('CROSS CORRELATION "text" and "a"')
 % Subdivision 3.3
 % Finding indexes having maximum value
 CrossCorrelationMaxValue = max(max(C))
-index = find(C > 90);
+index = find(C > CrossCorrelationMaxValue*0.95);
 
 % Mask containing the points with high cross correlation values
 mask = zeros(size(text_bw));
