@@ -64,8 +64,7 @@ for i = 1:size(corr_max_value_mask, 1)
 end
 
 % Apply filter on the text image
-% The result is only an approximation
-% Tried many methods but does not seem to work as expected
+% The result does not 
 filtered_letters = letter_filter_mask .* text_bw;
 
 % Display the results
